@@ -14,7 +14,7 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-6">
           {/* logo */}
           <Link href={"/"}>
-            <h1 className="text-4xl text-white">kamebuhi dev <span className="text-red-800 text-5xl">.</span></h1>
+            <h1 className="text-4xl text-white whitespace-nowrap">kame dev <span className="text-red-800 text-5xl">.</span></h1>
           </Link>
           {/* socials */}
           <Socials />
