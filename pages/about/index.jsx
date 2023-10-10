@@ -109,7 +109,7 @@ const About = () => {
   const [ index, setIndex ] = useState(0);
   console.log(index);
   return (
-      <div className="h-full py-20 xl:py-32 text-center xl:text-left">
+      <div className="h-full pt-[7rem] pb-[5rem] xl:py-32 text-center xl:text-left">
         <Circles />
         <Flower />
         {/* Avatar image */}
@@ -157,7 +157,7 @@ const About = () => {
             </motion.div>
           </div>
           {/* info */}
-          <motion.div variants={fadeIn('left', 0.4)} initial='hidden' animate='show' exit='hidden' className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-12 xl:mt-0">
+          <motion.div variants={fadeIn('left', 0.4)} initial='hidden' animate='show' exit='hidden' className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-[2rem] xl:mt-0">
           <div className="flex  gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item,itemIndex) => {
               return (
