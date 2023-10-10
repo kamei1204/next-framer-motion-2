@@ -41,7 +41,7 @@ const Contact = () => {
           {/* text */}
           <motion.h2 variants={fadeIn('up', 0.2)} initial='hidden' animate='show' exit='hidden' className="h2">Lets <span className="text-accent">connect.</span></motion.h2>
           {/* form */}
-          <motion.form ref={ref} onSubmit={handleSubmit} variants={fadeIn('up', 0.4)} initial='hidden' animate='show' exit='hidden' className="flex-1 flex flex-col gap-6 w-full mx-auto">
+          <motion.form ref={ref} onSubmit={handleSubmit} variants={fadeIn('up', 0.4)} initial='hidden' animate='show' exit='hidden' className="flex-1 flex flex-col gap-4 w-full mx-auto">
             {/* inner group */}
             <div className="flex gap-x-6 w-full">
               <input type="text" placeholder="name" className="input" name="name"/>
