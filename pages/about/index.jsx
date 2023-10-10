@@ -46,13 +46,12 @@ const aboutData = [
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
           <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<SiAdobexd />],
       },
     ],
   },
@@ -119,9 +118,8 @@ const About = () => {
         </motion.div>
         <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 mt-10 xl:mt-0">
           <div className="flex flex-1 flex-col justify-center">
-            <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className="h2">Captivating <span className="text-accent">stories</span><br/>birth magnificent designs.</motion.h2>
-            <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className="max-w-[600px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">以前は料理の世界で多くの経験を積み、お客様に美味しい料理を提供することが喜びでした。最近、新しい挑戦を求めてエンジニアとしての道を選びました。
-              料理人としての経験から得た創造力や細部への注意を、新しい分野で活かすことが目標です。エンジニアとしては、技術への情熱と問題解決能力を大切にしています。
+            <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className="h2">From chef <span className="text-accent">to</span><br/>web engineer</motion.h2>
+            <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className="max-w-[600px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">エンジニアとして、技術への情熱と問題解決能力を大切にしています。
               まだ経験は浅いですが、日々学びを重ねながら、新しい技術やプロジェクトに取り組んでいます。これからも成長を続け、技術を活用して社会に貢献することを目指しています。どうぞよろしくお願いいたします。
             </motion.p>
             {/* counters */}
@@ -159,7 +157,33 @@ const About = () => {
             </motion.div>
           </div>
           {/* info */}
-         
+          <motion.div variants={fadeIn('left', 0.4)} initial='hidden' animate='show' exit='hidden' className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-12 xl:mt-0">
+          <div className="flex  gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+            {aboutData.map((item,itemIndex) => {
+              return (
+                <div key={itemIndex} className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-red-800 after:transition-all after:duration-300 '} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} onClick = {() => setIndex(itemIndex)}>{item.title}</div>
+              )
+            })}
+          </div>
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl;gap-y-4 items-center xl:items-start">
+            {aboutData[index].info.map((item, itemIndex) => {
+              return (
+              <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
+                {/* title */}
+                <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                <div className="hidden md:flex">-</div>
+                <div>{item.stage}</div>
+                <div className="flex gap-x-4">
+                {/* icons */}
+                {item.icons?.map((icon,itemIndex) => {
+                  return <div className="text-2xl text-white" key={itemIndex}>{icon}</div>
+                })}
+                </div>
+              </div>
+              );
+            })}
+          </div>
+          </motion.div>
         </div>
       </div>
     )
