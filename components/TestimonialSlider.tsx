@@ -16,25 +16,25 @@ import { FaQuoteLeft } from "react-icons/fa";
 // testimonial data
 const testimonialData = [
   {
-    image: '/t-avt-1.png',
+    image: '/avatar-1.png',
     name: 'Anne Smith',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'お客様の声はまだありません...',
   },
   {
-    image: '/t-avt-2.png',
+    image: '/avatar-2.png',
     name: 'Jane Doe',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'お客様の声はまだありません...',
   },
   {
-    image: '/t-avt-3.png',
+    image: '/avatar-3.png',
     name: 'Jhon Doe',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'お客様の声はまだありません...',
   },
 ];
 

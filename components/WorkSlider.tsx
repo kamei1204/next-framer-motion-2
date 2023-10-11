@@ -20,19 +20,19 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/work.png',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/work.png',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/work.png',
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/work.png',
         },
       ],
     },
@@ -40,19 +40,19 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/work-1.png',
         },
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/work-1.png',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/work-1.png',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/work-1.png',
         },
       ],
     },
@@ -75,9 +75,9 @@ const WorkSlider = () => {
             {slide.images.map((image, index) => {
               return (
                 <div key={index} className=" relative rounded-lg overflow-hidden flex items-center justify-center group">
-                  <div className="flex items-center justify-center relative overflow-hidden group">
+                  <div className="flex items-center justify-center relative overflow-hidden group  h-28 md:h-48">
                     {/* image */}
-                    <Image src={image.path} width={500} height={300}  alt={image.title} />
+                    <Image src={image.path} width={500} height={300} alt={image.title} />
                     {/* overlay */}
                     <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#90909086] to-[#5453535d] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                     {/* title */}

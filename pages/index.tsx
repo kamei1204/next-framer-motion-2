@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                 </motion.h1>
                 {/* subtitle */}
                 <motion.p variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden' className='mx-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-                「私は日本を拠点にするフルスタック・デベロッパーです。UIのエフェクトやアニメーション、そして直感的でダイナミックなユーザーエクスペリエンスの創造に真剣に情熱を抱いています。」
+                「私は日本を拠点にフルスタック・デベロッパーを目指しています。UIのエフェクトやアニメーション、そして直感的でダイナミックなユーザーエクスペリエンスの創造に真剣に情熱を抱いています。」
                 </motion.p>
                 <div className='flex justify-center xl:hidden relative'>
                     <ProjectsBtn />
